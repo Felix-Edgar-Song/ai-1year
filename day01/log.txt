@@ -1,0 +1,3 @@
+CUDA:True GPU:NVIDIA GeForce RTX 5060 Ti 15.4GB
+fp32 64.0MB vs bf16 32.0MB -> 50% = 50% saving
+nvidia-smi 767MiB / 16311MiB idle Driver 595.84 CUDA 13.2
