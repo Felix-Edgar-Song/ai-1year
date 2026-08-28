@@ -1,0 +1,5 @@
+전체 100개, batch=2면 1 epoch = 50 steps
+step1: x=torch.Size([2, 768]) [2,768] y=torch.Size([2, 1]) <- 어제 Liner 입력!
+200 steps = batch 2면 400개 봄
+CUDA: 0.00MB (DataLoader는 VRAM 거의 0)
+GPU: NVIDIA GeForce RTX 5060 Ti
