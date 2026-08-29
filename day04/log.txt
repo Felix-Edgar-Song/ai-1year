@@ -1,0 +1,30 @@
+Param: 768 = 768x1
+Forward: pred 0.053, loss 0.4492
+Backward: grad norm 23.5000 - 768 grads created!
+Upadted: weight mean -0.000381
+CUDA: 64.01MB
+GPU: NVIDIA GeForce RTX 5060 Ti
+Sat Aug 29 22:00:46 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   39C    P8              4W /  180W |     573MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            1621      G   /usr/lib/xorg/Xorg                      239MiB |
+|    0   N/A  N/A            2000      G   /usr/bin/gnome-shell                     16MiB |
+|    0   N/A  N/A            3309      G   /usr/lib/xorg/Xorg                      167MiB |
+|    0   N/A  N/A            3484      G   /usr/bin/gnome-shell                     10MiB |
+|    0   N/A  N/A            4287      G   /usr/bin/gnome-control-center            13MiB |
++-----------------------------------------------------------------------------------------+
