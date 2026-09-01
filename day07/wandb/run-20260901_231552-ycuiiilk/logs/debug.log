@@ -1,0 +1,24 @@
+2026-09-01 23:15:52,653 INFO    MainThread:3740 [wandb_setup.py:_flush():81] Current SDK version is 0.29.0
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_setup.py:_flush():81] Configure stats pid to 3740
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_init.py:setup_run_log_directory():739] Logging user logs to /home/felix/ai-1year/day07/wandb/run-20260901_231552-ycuiiilk/logs/debug.log
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_init.py:setup_run_log_directory():740] Logging internal logs to /home/felix/ai-1year/day07/wandb/run-20260901_231552-ycuiiilk/logs/debug-internal.log
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_init.py:init():783] calling init triggers
+2026-09-01 23:15:52,654 INFO    MainThread:3740 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'vocab': 500, 'hidden': 768, 'layers': 6, 'seq': 128, 'batch': 8, '_wandb': {}}
+2026-09-01 23:15:52,655 INFO    MainThread:3740 [wandb_init.py:init():831] starting backend
+2026-09-01 23:15:52,655 INFO    MainThread:3740 [wandb_init.py:init():846] sending inform_init request
+2026-09-01 23:15:53,224 INFO    MainThread:3740 [wandb_init.py:init():851] backend started and connected
+2026-09-01 23:15:53,235 INFO    MainThread:3740 [wandb_init.py:init():921] updated telemetry
+2026-09-01 23:15:53,249 INFO    MainThread:3740 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-09-01 23:15:54,058 INFO    MainThread:3740 [wandb_init.py:init():981] starting run threads in backend
+2026-09-01 23:15:54,125 INFO    MainThread:3740 [wandb_run.py:_console_start():2545] atexit reg
+2026-09-01 23:15:54,125 INFO    MainThread:3740 [wandb_run.py:_redirect():2395] redirect: wrap_raw
+2026-09-01 23:15:54,125 INFO    MainThread:3740 [wandb_run.py:_redirect():2464] Wrapping output streams.
+2026-09-01 23:15:54,125 INFO    MainThread:3740 [wandb_run.py:_redirect():2487] Redirects installed.
+2026-09-01 23:15:54,126 INFO    MainThread:3740 [wandb_init.py:init():1019] run started, returning control to user process
+2026-09-01 23:16:06,093 INFO    MainThread:3740 [wandb_run.py:_finish():2316] finishing run lightel-test/ai-1year/ycuiiilk
+2026-09-01 23:16:06,093 INFO    MainThread:3740 [wandb_run.py:_atexit_cleanup():2512] got exitcode: 0
+2026-09-01 23:16:06,093 INFO    MainThread:3740 [wandb_run.py:_restore():2494] restore
+2026-09-01 23:16:06,093 INFO    MainThread:3740 [wandb_run.py:_restore():2500] restore done
+2026-09-01 23:16:07,727 INFO    MainThread:3740 [wandb_run.py:_footer_sync_info():3917] logging synced files
