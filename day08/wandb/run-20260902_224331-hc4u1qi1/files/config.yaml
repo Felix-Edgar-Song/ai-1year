@@ -1,0 +1,59 @@
+_wandb:
+    value:
+        cli_version: 0.29.0
+        e:
+            avkn2f09o6lnpj2zsj1olzelvsfct3aw:
+                codePath: day08/08_seq512_67s.py
+                codePathLocal: 08_seq512_67s.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "224818880512"
+                        used: "50301857792"
+                email: lightel@gmail.com
+                executable: /home/felix/ai-env/bin/python
+                git:
+                    commit: ec465778e897ff812177f21707086b13c6c7c802
+                    remote: git@github.com:Felix-Edgar-Song/ai-1year.git
+                gpu: NVIDIA GeForce RTX 5060 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 4608
+                      memoryTotal: "17103323136"
+                      name: NVIDIA GeForce RTX 5060 Ti
+                      uuid: GPU-8a13f23f-4a1a-3040-45a2-60e7398e5168
+                host: felix-5060ti
+                memory:
+                    total: "33452621824"
+                os: Linux-7.0.0-30-generic-x86_64-with-glibc2.39
+                program: /home/felix/ai-1year/day08/08_seq512_67s.py
+                python: CPython 3.12.3
+                root: /home/felix/ai-1year/day08
+                startedAt: "2026-09-02T13:43:31.225722Z"
+                writerId: avkn2f09o6lnpj2zsj1olzelvsfct3aw
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.12.3
+            "5": 0.29.0
+            "12": 0.29.0
+            "13": linux-x86_64
+batch:
+    value: 4
+hidden:
+    value: 768
+layers:
+    value: 6
+seq:
+    value: 512
