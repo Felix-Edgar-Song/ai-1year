@@ -1,0 +1,14 @@
+Param: 43.30M - same as Day7 43M
+Step | loss | time | CUDA | peak | seq=512 O(n^2)
+  1 | 6.3960 | 3.2s | 326MB | 529MB | fwd 1503ms
+ 20 | 0.0106 | 3.5s | 326MB | 705MB | fwd 4ms
+ 40 | 0.0045 | 3.9s | 326MB | 705MB | fwd 4ms
+ 60 | 0.0041 | 4.4s | 326MB | 705MB | fwd 4ms
+ 80 | 0.0040 | 4.8s | 326MB | 705MB | fwd 4ms
+100 | 0.0039 | 5.2s | 326MB | 705MB | fwd 4ms
+120 | 0.0038 | 5.6s | 326MB | 705MB | fwd 4ms
+140 | 0.0036 | 6.1s | 326MB | 705MB | fwd 4ms
+160 | 0.0036 | 6.5s | 326MB | 705MB | fwd 4ms
+180 | 0.0035 | 6.9s | 326MB | 705MB | fwd 4ms
+200 | 0.0034 | 7.3s | 326MB | 705MB | fwd 4ms
+Final loss 0.0034 Target 0.0999 | Total 7.4s Target 67s | GPU NVIDIA GeForce RTX 5060 Ti
