@@ -1,0 +1,40 @@
+{
+  "os":  "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2026-09-03T14:09:26.997701Z",
+  "program":  "/home/felix/ai-1year/day09/09_vocab32k_67m.py",
+  "codePath":  "day09/09_vocab32k_67m.py",
+  "codePathLocal":  "09_vocab32k_67m.py",
+  "git":  {
+    "remote":  "git@github.com:Felix-Edgar-Song/ai-1year.git",
+    "commit":  "39dd2e2b7d1e002e2c28027c689ed6d33534ee9d"
+  },
+  "email":  "lightel@gmail.com",
+  "root":  "/home/felix/ai-1year/day09",
+  "host":  "felix-5060ti",
+  "executable":  "/home/felix/ai-env/bin/python",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "224818880512",
+      "used":  "50727014400"
+    }
+  },
+  "memory":  {
+    "total":  "33452613632"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 5060 Ti",
+      "memoryTotal":  "17103323136",
+      "cudaCores":  4608,
+      "architecture":  "Blackwell",
+      "uuid":  "GPU-8a13f23f-4a1a-3040-45a2-60e7398e5168"
+    }
+  ],
+  "cudaVersion":  "13.2",
+  "writerId":  "20awfgmqv793jrb0rhqizgydqlbakpo4"
+}
