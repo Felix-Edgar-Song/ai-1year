@@ -1,0 +1,14 @@
+Param: 91.68M - Day8 43M -> Day9 91M vocab 64x
+Step | loss | time | CUDA | peak | vocab 32K
+  1 | 10.5209 | 3.1s | 597MB | 952MB
+ 20 | 10.5004 | 3.5s | 597MB | 1150MB
+ 40 | 9.6240 | 4.0s | 597MB | 1150MB
+ 60 | 9.6664 | 4.5s | 597MB | 1150MB
+ 80 | 10.0723 | 5.0s | 597MB | 1150MB
+100 | 9.4039 | 5.5s | 597MB | 1150MB
+120 | 10.0064 | 6.0s | 597MB | 1150MB
+140 | 9.3778 | 6.5s | 597MB | 1150MB
+160 | 9.4875 | 7.0s | 597MB | 1150MB
+180 | 9.7793 | 7.5s | 597MB | 1150MB
+200 | 9.7316 | 8.0s | 597MB | 1150MB
+Final 9.7316 | Total 8.1s | Param 91.7M | GPU NVIDIA GeForce RTX 5060 Ti
