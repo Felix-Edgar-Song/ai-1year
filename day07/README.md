@@ -17,10 +17,11 @@
 - Insight: Phase2 start, scale-up experience
 
 ## Log
+```
 Param: 43.30M
 1 | 6.4319 | 3.1s | 322.8MB | 495.2MB
 20 | 0.0152 | 3.3s
 200 | 0.0042 | 5.7s | 322.8MB | 523.8MB
 GPU: RTX 5060 Ti
 wandb: loss 0.00421
-
+```
