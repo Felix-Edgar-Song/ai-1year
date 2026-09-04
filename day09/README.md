@@ -19,9 +19,11 @@
 - wandb: unstable loss graph shows large vocab training difficulty
 
 ## Log
+```
 Param: 91.68M
 1 | 10.5209 | 3.1s | 597MB | 952MB
 20 | 10.5004 | 3.5s | 597MB | 1150MB
 200 | 9.7316 | 8.0s | 597MB | 1150MB
 GPU: RTX 5060 Ti 16GB
 Total: 8.1s
+```
