@@ -16,7 +16,7 @@
 - CUDA: 64.01MB (model + grad + CUDA context), part of nvidia-smi 573MiB
 - Insight: How 0.59M params are trained, proven by hand
 
-## Log
+### Log
 ```log
 Param: 768
 Forward: ...
