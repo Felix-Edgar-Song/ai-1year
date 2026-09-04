@@ -15,10 +15,12 @@
 - wandb: fwd_ms graph shows compile cache hit
 
 ## Log
+
+```
 Param: 43.30M
 1 | 6.3960 | 3.2s | 326MB | 529MB | fwd 1503ms
 20 | 0.0106 | 3.5s | 326MB | 705MB | fwd 4ms
 200 | 0.0034 | 7.3s | 326MB | 705MB | fwd 4ms
 GPU: RTX 5060 Ti
 Peak: 704.9MB
-
+```
