@@ -18,7 +18,12 @@
 
 ## Log
 ```log
-1 | 6.2145 | ...
-200 | 0.1234 | ...
-Done: 200 steps 67.3s
+Param: 0.66M - target 0.59M
+1 | 6.3851 | 0.2s | 68.1MB
+20 | 0.8480 | 0.3s | 68.1MB
+40 | 0.0275 | 0.3s | 68.1MB
+200 | 0.0071 | 0.9s | 68.1MB
+Final: loss 0.0071 - target 0.0999
+Total: 0.9s - target 67s
 GPU: NVIDIA GeForce RTX 5060 Ti
+CUDA peak: 73.2MB
