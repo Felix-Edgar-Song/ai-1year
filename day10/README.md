@@ -21,4 +21,4 @@
 500 | 9.5937 | 660MB | 1390MB Peak
 GPU: 5060 Ti 16GB 104MiB idle
 Total 12.5s
-
+```
