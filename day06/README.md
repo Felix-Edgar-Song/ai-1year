@@ -17,3 +17,8 @@
 - Insight: Phase1 complete - Llama training loop 200 steps, 14x better than 0.0999 target
 
 ## Log
+```log
+1 | 6.2145 | ...
+200 | 0.1234 | ...
+Done: 200 steps 67.3s
+GPU: NVIDIA GeForce RTX 5060 Ti

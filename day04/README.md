@@ -17,3 +17,7 @@
 - Insight: How 0.59M params are trained, proven by hand
 
 ## Log
+```log
+Param: 768
+Forward: ...
+Backward: grad norm ...

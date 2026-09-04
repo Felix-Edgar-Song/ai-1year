@@ -16,8 +16,9 @@
 - GPU: NVIDIA GeForce RTX 5060 Ti 16GB, Driver 595.84
 - Insight: Yesterday's 200 steps 67s training saw only 4% of data to get loss 4.56→0.0999
 
-<<<<<<< HEAD
-=======
-## Log
-
->>>>>>> 8f21169 (Day3 README bilingual KR+EN - DataLoader 100->50steps [2,768] CUDA 0MB)
+### LOG
+```log
+Total Samples: 100, batch=2 , 1 epoch = 50 steps
+step1: x=torch.Size() y=torch.Size()
+CUDA: 0.00MB (DataLoader's VRAM near -> 0)
+GPU: NVIDIA GeForce RTX 5060 Ti[2][768][1]
