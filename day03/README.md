@@ -22,3 +22,4 @@ Total Samples: 100, batch=2 , 1 epoch = 50 steps
 step1: x=torch.Size() y=torch.Size()
 CUDA: 0.00MB (DataLoader's VRAM near -> 0)
 GPU: NVIDIA GeForce RTX 5060 Ti[2][768][1]
+
