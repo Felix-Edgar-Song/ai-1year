@@ -1,0 +1,14 @@
+Param: 91.68M - Day9 91.68M same
+Step | loss | time | CUDA | peak | accum 4
+  1 | 10.5209 | 2.7s | 480MB | 826MB | eff batch 8
+ 50 | 10.2463 | 4.1s | 837MB | 1390MB | eff batch 8
+100 | 9.4395 | 5.0s | 660MB | 1390MB | eff batch 8
+150 | 9.6501 | 5.9s | 837MB | 1390MB | eff batch 8
+200 | 9.6217 | 6.9s | 660MB | 1390MB | eff batch 8
+250 | 9.6179 | 7.8s | 837MB | 1390MB | eff batch 8
+300 | 9.6010 | 8.8s | 660MB | 1390MB | eff batch 8
+350 | 9.5998 | 9.7s | 837MB | 1390MB | eff batch 8
+400 | 9.5840 | 10.7s | 660MB | 1390MB | eff batch 8
+450 | 9.6009 | 11.6s | 837MB | 1390MB | eff batch 8
+500 | 9.5937 | 12.5s | 660MB | 1390MB | eff batch 8
+Final 9.5937 | Total 12.6s | Param 91.7M
