@@ -20,8 +20,19 @@
 - Insight: SGD wins toy, AdamW wins Transformer 590K - enables 200 steps 67s
 - Meta interview: "Adam vs AdamW? weight_decay decoupled"
 
-## Log Exp1 lr=0.01 (divergence proves need for adaptive)~
+### Log Exp1 lr=0.01 (divergence proves need for adaptive)~
+```log
+1 | 3.5156 | 3.5156
+2 | 132.0000 | 2.1719
+6 | 301989888.0000 | 0.0022
+CUDA: 16.55MB
 
-## Log Exp2 lr=0.001 Fixed (convergence)
-
+### Log Exp2 lr=0.001 Fixed (convergence)
+```log
+1 | 0.4531 | 0.4531
+2 | 0.0410 | 0.0742
+4 | 0.0003 | 0.1182
+10 | 0.0000 | 0.0288
+CUDA: 64.01MB
+GPU: NVIDIA GeForce RTX 5060 Ti
 
