@@ -15,7 +15,8 @@
 - Ch2 Sec2.2 Fig2.5 frequency, Ch5 Sec5.2 Fig5.6 rare plateau
 - Insight: large vocab needs 1T tokens, 20 sentences copy is wrong task - Day11 vocab 8000 or repeated data
 
-## Log
+### Log
+```log
 1 | 10.5209 | 480MB | 826MB
 500 | 9.5937 | 660MB | 1390MB Peak
 GPU: 5060 Ti 16GB 104MiB idle
