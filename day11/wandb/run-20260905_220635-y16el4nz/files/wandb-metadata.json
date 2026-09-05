@@ -1,0 +1,36 @@
+{
+  "os":  "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2026-09-05T13:06:35.327997Z",
+  "program":  "/home/felix/day11/11_vocab8k_next.py",
+  "codePath":  "11_vocab8k_next.py",
+  "codePathLocal":  "11_vocab8k_next.py",
+  "email":  "lightel@gmail.com",
+  "root":  "/home/felix/day11",
+  "host":  "felix-5060ti",
+  "executable":  "/home/felix/ai-env/bin/python",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "224818880512",
+      "used":  "51112636416"
+    }
+  },
+  "memory":  {
+    "total":  "33452613632"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 5060 Ti",
+      "memoryTotal":  "17103323136",
+      "cudaCores":  4608,
+      "architecture":  "Blackwell",
+      "uuid":  "GPU-8a13f23f-4a1a-3040-45a2-60e7398e5168"
+    }
+  ],
+  "cudaVersion":  "13.2",
+  "writerId":  "gq8c9og6ye26d96ub4rp9elb7cr5h6w0"
+}
