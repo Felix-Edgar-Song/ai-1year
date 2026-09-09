@@ -1,0 +1,12 @@
+Text: Hello world, this is Day15 causal GPT with real BPE tokenizer.
+BPE ids: [9906, 1917, 11, 420, 374, 6187, 868, 59557, 480, 2898, 449, 1972, 426, 1777, 47058, 13] len=16
+Decode check: Hello world, this is Day15 causal GPT with real BPE tokenizer.
+x shape torch.Size([1, 512]) y shape torch.Size([1, 512]) - should be [1,512]
+ 25 | loss 0.0007 | CUDA 1295MB | Peak 2052MB
+ 50 | loss 0.0004 | CUDA 1295MB | Peak 2052MB
+ 75 | loss 0.0004 | CUDA 1295MB | Peak 2052MB
+100 | loss 0.0003 | CUDA 1295MB | Peak 2052MB
+Prompt: Hello world, this is
+Gen: Hello world, this is Day15 causal GPT with real BPE tokenizer
+Gen ids tail: [6187, 868, 59557, 480, 2898, 449, 1972, 426, 1777, 47058]
+Expected:  is Day15 causal GPT with real BPE tokenizer.
