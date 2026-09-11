@@ -1,0 +1,7 @@
+x torch.Size([1, 512]) cuda:0 len 513
+trainable params: 368,640 || all params: 196,921,344 || trainable%: 0.1872
+ 25 | loss 2.0938 | CUDA 2898MB | Peak 3309MB | trainable 0.1872%
+ 50 | loss 0.5781 | CUDA 1820MB | Peak 4583MB | trainable 0.1872%
+ 75 | loss 0.5000 | CUDA 4270MB | Peak 4681MB | trainable 0.1872%
+100 | loss 0.4863 | CUDA 1918MB | Peak 5955MB | trainable 0.1872%
+GEN: EN: Hello world, this is KO: Hello world, this is Day15 KO: Hello
