@@ -1,0 +1,7 @@
+trainable params: 368,640 || all params: 196,921,344 || trainable%: 0.1872
+100 | loss 0.4160 | 3290MB Peak 7719MB
+200 | loss 0.3848 | 7504MB Peak 7915MB
+300 | loss 0.3750 | 8876MB Peak 9287MB
+400 | loss 0.3672 | 938MB Peak 9875MB
+500 | loss 0.3633 | 1918MB Peak 9875MB
+GEN 500steps: EN: Hello world, this is Day15 KO: 안녕 세
