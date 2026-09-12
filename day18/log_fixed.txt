@@ -1,0 +1,8 @@
+trainable params: 368,640 || all params: 196,921,344 || trainable%: 0.1872
+SFT 100 loss 0.3691 4956MB Peak 6053MB
+SFT 200 loss 0.3535 9366MB Peak 9777MB
+DPO 50 loss 0.5103 CUDA 1090MB Peak 9777MB
+DPO 100 loss 0.4446 CUDA 1216MB Peak 9777MB
+DPO 150 loss 0.4088 CUDA 1341MB Peak 9777MB
+DPO 200 loss 0.3857 CUDA 2063MB Peak 9777MB
+GEN DPO FIXED: EN: Hello world, this is Day15 KO: 안 안 안 안 안 안 안 안
