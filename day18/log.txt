@@ -1,0 +1,6 @@
+trainable params: 368,640 || all params: 196,921,344 || trainable%: 0.1872
+ 50 | DPO loss 0.6211 | CUDA 973MB | Peak 1024MB | chosen > rejected
+100 | DPO loss 0.5547 | CUDA 534MB | Peak 1190MB | chosen > rejected
+150 | DPO loss 0.5273 | CUDA 644MB | Peak 1190MB | chosen > rejected
+200 | DPO loss 0.4883 | CUDA 738MB | Peak 1190MB | chosen > rejected
+GEN DPO: EN: Hello world, this is Day15 KO: 이 이 이 이 이 이 이 이

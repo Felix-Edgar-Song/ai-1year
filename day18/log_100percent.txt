@@ -1,0 +1,7 @@
+trainable params: 368,640 || all params: 196,921,344 || trainable%: 0.1872
+SFT  200 loss 0.5547 CUDA 5446MB Peak 9483MB
+SFT  400 loss 0.5352 CUDA 1232MB Peak 9875MB
+SFT  600 loss 0.5195 CUDA 3290MB Peak 9875MB
+SFT  800 loss 0.4863 CUDA 5054MB Peak 9876MB
+SFT 1000 loss 0.4004 CUDA 6818MB Peak 9876MB
+GEN SFT 1000: EN: Hello world, this is Day15 KO: 안녕 세상, 이건
