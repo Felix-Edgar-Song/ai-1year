@@ -1,0 +1,7 @@
+HF Serving initial: CUDA 380MB Peak 897MB
+Generate 0 CUDA 414MB Peak 897MB
+Generate 3 CUDA 415MB Peak 897MB
+Generate 6 CUDA 415MB Peak 897MB
+Generate 9 CUDA 417MB Peak 897MB
+GEN HF Serving: EN: Hello world, this is Day15 KO: LaTeX.JOptionPane@test buses.Z swirl�untos	Copyright.backends
+Final HF Serving Peak 897MB
