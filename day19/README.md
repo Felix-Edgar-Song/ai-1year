@@ -101,3 +101,9 @@ vLLM 15208MiB not measured due to TinyLlama repo deleted 401, explained via calc
 - Raschka (2024) Build a LLM Ch 6 Sec 6.1 Fig 6.2 PagedAttention 104->2496MiB vs 104->15208MiB
 - Raschka (2024) Ch 7 Sec 7.2 Fig 7.4 LoRA r=8 0.1872% 368k
 - Rafailov et al. (2023) DPO - 1-task collapse expected
+
+
+## OS Level - Production vs Desktop
+- Desktop idle 104MiB (power-saving) / 188MiB (active) due to Xorg 67MiB + gnome-shell 6MiB
+- Production headless 0MiB, no GNOME installed, 622MiB more for vLLM, batch 8 difference
+- Fix: sudo systemctl stop gdm3 && telinit 3 -> 12MiB idle
