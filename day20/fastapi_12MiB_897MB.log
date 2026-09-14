@@ -1,0 +1,4 @@
+Trying /home/felix/ai-1year/day18/sft_1000.pt exists=True size=375MB
+Loaded: missing=0 unexpected=0
+LoRA loaded 100% - 안녕 세상 Ready
+INFO:     127.0.0.1:32946 - "GET /generate?prompt=EN:%20Hello%20KO: HTTP/1.1" 200 OK
