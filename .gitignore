@@ -6,3 +6,4 @@ day13/*.pt
 *.ckpt
 
 
+day18/sft_1000_quick.py
