@@ -1,0 +1,5 @@
+Tue Sep 15 21:50:40 2026
+| RTX 5060 Ti | 786MiB / 16311MiB | 0% | P1 18W 36C |
+| Processes: python 766MiB PID 7867 |
+Model loaded 375M - 757MB
+health 380MB / gen 413MB Peak 417MB 안녕 세상 100%
