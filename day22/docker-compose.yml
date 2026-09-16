@@ -1,0 +1,20 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/felix/ai-1year/day18:/app/day18:ro
+      - /home/felix/ai-1year/day21:/app/day21:ro
+    environment:
+      - CKPT=/app/day18/sft_1000.pt
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities:
+                - gpu
+    ports:
+      - "8000-8020:8000"

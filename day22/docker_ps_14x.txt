@@ -1,0 +1,15 @@
+CONTAINER ID   IMAGE       COMMAND                   CREATED         STATUS         PORTS                                         NAMES
+38759c121a79   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp   day22-api-2
+784ca79dfb5d   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8002->8000/tcp, [::]:8002->8000/tcp   day22-api-11
+fac08b766052   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8003->8000/tcp, [::]:8003->8000/tcp   day22-api-20
+68059c8fd0f3   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8004->8000/tcp, [::]:8004->8000/tcp   day22-api-17
+57f59d383b3b   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8005->8000/tcp, [::]:8005->8000/tcp   day22-api-16
+b251d34f0b9f   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8006->8000/tcp, [::]:8006->8000/tcp   day22-api-7
+ae05c7838c7d   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8007->8000/tcp, [::]:8007->8000/tcp   day22-api-10
+055340e28063   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8008->8000/tcp, [::]:8008->8000/tcp   day22-api-14
+e3720aa17ab9   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8009->8000/tcp, [::]:8009->8000/tcp   day22-api-15
+77ba903c6ca8   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8010->8000/tcp, [::]:8010->8000/tcp   day22-api-8
+7da46fed0354   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8011->8000/tcp, [::]:8011->8000/tcp   day22-api-13
+267e39d7cbd7   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8012->8000/tcp, [::]:8012->8000/tcp   day22-api-12
+ffa3a110a6ed   day22-api   "python -m uvicorn a…"   4 minutes ago   Up 3 minutes   0.0.0.0:8013->8000/tcp, [::]:8013->8000/tcp   day22-api-18
+bb02e659d106   day22-api   "python -m uvicorn a…"   5 minutes ago   Up 5 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp   day22-api-1
