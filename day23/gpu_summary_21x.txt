@@ -1,0 +1,2 @@
+memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+15438 MiB, 16311 MiB, 0 %
