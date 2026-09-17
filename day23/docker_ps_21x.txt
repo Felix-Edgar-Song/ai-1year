@@ -1,0 +1,22 @@
+CONTAINER ID   IMAGE       COMMAND                   CREATED         STATUS                          PORTS                                         NAMES
+54881b338522   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp   day23-api-2
+f46d5c2b7637   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8002->8000/tcp, [::]:8002->8000/tcp   day23-api-10
+31ec5e03c717   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8003->8000/tcp, [::]:8003->8000/tcp   day23-api-14
+a43593da0511   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8004->8000/tcp, [::]:8004->8000/tcp   day23-api-12
+cb2a62971d3a   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8005->8000/tcp, [::]:8005->8000/tcp   day23-api-18
+629b305ca580   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8006->8000/tcp, [::]:8006->8000/tcp   day23-api-3
+dffa192ae1d8   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8007->8000/tcp, [::]:8007->8000/tcp   day23-api-4
+01052410e10c   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8008->8000/tcp, [::]:8008->8000/tcp   day23-api-15
+2a9c92258bab   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8009->8000/tcp, [::]:8009->8000/tcp   day23-api-11
+db694e7e9e83   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8010->8000/tcp, [::]:8010->8000/tcp   day23-api-21
+aaf17b14355d   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8011->8000/tcp, [::]:8011->8000/tcp   day23-api-17
+1f6ed6b253e8   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8012->8000/tcp, [::]:8012->8000/tcp   day23-api-5
+a74bd82a672f   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8013->8000/tcp, [::]:8013->8000/tcp   day23-api-20
+7e8b714f4f55   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8014->8000/tcp, [::]:8014->8000/tcp   day23-api-16
+a59495683140   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8015->8000/tcp, [::]:8015->8000/tcp   day23-api-9
+0e815f6f1f38   day23-api   "python -m uvicorn a…"   6 minutes ago   Up 6 minutes                    0.0.0.0:8016->8000/tcp, [::]:8016->8000/tcp   day23-api-13
+702b4e2c8a9b   day23-api   "python -m uvicorn a…"   6 minutes ago   Restarting (3) 50 seconds ago                                                 day23-api-19
+45648e9376a3   day23-api   "python -m uvicorn a…"   6 minutes ago   Restarting (3) 44 seconds ago                                                 day23-api-7
+0aecce6959f1   day23-api   "python -m uvicorn a…"   6 minutes ago   Restarting (3) 44 seconds ago                                                 day23-api-8
+58fb0cb3f26a   day23-api   "python -m uvicorn a…"   6 minutes ago   Restarting (3) 44 seconds ago                                                 day23-api-6
+67da53e1b9b7   day23-api   "python -m uvicorn a…"   9 minutes ago   Up 9 minutes                    0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp   day23-api-1
