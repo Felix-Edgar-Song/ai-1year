@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    image: day24-api
+    ports: ["8000-8020:8000"]
+    runtime: nvidia
+    environment: [NVIDIA_VISIBLE_DEVICES=all]
+    volumes: ["/home/felix/ai-1year/day18:/home/felix/ai-1year/day18:ro"]
