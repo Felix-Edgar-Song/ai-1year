@@ -27,6 +27,15 @@
 - `nvidia-smi` 15438MiB는 5060 Ti 16GB의 94.6% 실사용 한계, Day23과 100% 동일
 - Docker는 `ai-env`와 별개 - 시스템 레벨 `/var/run/docker.sock`
 
+
+### 💡 핵심 포인트
+
+- **760MiB 실패가 아닌 902MiB 한계 증명:** `slim+cu128 800MB` vs `pytorch-runtime 4.5GB` 어느 base를 써도 Blackwell CUDA context는 902MiB로 동일 - 더 이상 경량화 불가능
+- **sm_120 네이티브 달성:** Day23 `Supports sm_50...sm_90` 경고 → Day24 0개, `torch.cuda.get_arch_list()`에 sm_120 포함 확인
+- **17개가 5060 Ti 16GB의 실제 한계:** `16311 / 902 = 18.0` 이론상 18개지만, 드라이버/디스플레이 873MiB 예약으로 17개(15438MiB, 94.6%)가 실사용 최대 - 18개째부터 OOM은 정상
+- **QnA:** "왜 760MiB 안됐나요? Blackwell 최소 context 525MB + 모델 377MB = 902MiB가 하한선, 760MiB로 가려면 vLLM PagedAttention이 필요합니다" 라고 답하면 됨
+
+
 ---
 
 ## 🇺🇸 English
@@ -55,6 +64,15 @@
 - Of `8000-8020:8000` 21 ports, 17 `Up` (8001~8017), 4 OOM (8000,8018-8020)
 - `nvidia-smi` 15438MiB is 94.6% real limit of 5060 Ti 16GB, identical to Day23
 - Docker is separate from `ai-env` - system-level `/var/run/docker.sock`
+
+
+### 💡 Key Insight
+
+- **Not failure but proof of 902MiB floor:** Whether `slim+cu128 800MB` or `pytorch-runtime 4.5GB`, Blackwell CUDA context is same 902MiB - no further lightweight possible with vanilla PyTorch
+- **sm_120 native achieved:** Day23 `Supports sm_50...sm_90` warning → Day24 0 warnings, `torch.cuda.get_arch_list()` includes sm_120
+- **17 is real limit of 5060 Ti 16GB:** `16311 / 902 = 18.0` theoretical but 873MiB reserved for driver/display, so 17 (15438MiB, 94.6%) is practical max - OOM from 18th is expected
+- **QnA:** "Why not 760MiB? Blackwell minimal context 525MB + model 377MB = 902MiB floor. To reach 760MiB, need vLLM PagedAttention" - this is the perfect answer
+
 
 ---
 
