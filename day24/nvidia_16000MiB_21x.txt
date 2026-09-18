@@ -1,0 +1,36 @@
+Sat Sep 19 00:54:44 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   38C    P8              5W /  180W |   15438MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          158181      C   python                                  902MiB |
+|    0   N/A  N/A          160549      C   python                                  902MiB |
+|    0   N/A  N/A          160859      C   python                                  902MiB |
+|    0   N/A  N/A          161159      C   python                                  902MiB |
+|    0   N/A  N/A          161463      C   python                                  902MiB |
+|    0   N/A  N/A          161769      C   python                                  902MiB |
+|    0   N/A  N/A          162078      C   python                                  902MiB |
+|    0   N/A  N/A          162388      C   python                                  902MiB |
+|    0   N/A  N/A          162696      C   python                                  902MiB |
+|    0   N/A  N/A          163006      C   python                                  902MiB |
+|    0   N/A  N/A          163337      C   python                                  902MiB |
+|    0   N/A  N/A          163630      C   python                                  902MiB |
+|    0   N/A  N/A          163936      C   python                                  902MiB |
+|    0   N/A  N/A          164314      C   python                                  902MiB |
+|    0   N/A  N/A          164627      C   python                                  902MiB |
+|    0   N/A  N/A          164929      C   python                                  902MiB |
+|    0   N/A  N/A          165233      C   python                                  902MiB |
++-----------------------------------------------------------------------------------------+
