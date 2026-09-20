@@ -1,0 +1,28 @@
+Sun Sep 20 12:26:11 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   38C    P8              5W /  180W |    2128MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         1032987      C   VLLM::EngineCore                        686MiB |
+|    0   N/A  N/A         1033018      C   VLLM::EngineCore                        860MiB |
+|    0   N/A  N/A         1033019      C   VLLM::EngineCore                        552MiB |
++-----------------------------------------------------------------------------------------+
+=== 3 replicas ===
+CONTAINER ID   IMAGE                    COMMAND                   CREATED          STATUS          PORTS                                         NAMES
+9d44f8a10331   day25-vllm-gpt2:latest   "/opt/nvidia/nvidia_…"   21 minutes ago   Up 21 minutes   0.0.0.0:8004->8000/tcp, [::]:8004->8000/tcp   day25-api5-1
+5917e97247b5   day25-vllm-gpt2:latest   "/opt/nvidia/nvidia_…"   21 minutes ago   Up 21 minutes   0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp   day25-api2-1
+50ded10f0d62   day25-vllm-gpt2:latest   "/opt/nvidia/nvidia_…"   21 minutes ago   Up 21 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp   day25-api1-1
+{"text":"_friday'. It's where Eminem opened up\n\nthe world to his My Big Fat Greek"}{"text":"\n\nSnowbat woke up when Sunny grew up and noticed that the pad on his chest was emitting"}{"text":"\n\nSnowbat woke up when Sunny grew up and noticed that the pad on his chest was emitting"}

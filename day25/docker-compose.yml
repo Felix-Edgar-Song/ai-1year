@@ -1,0 +1,24 @@
+services:
+  api1:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpt2
+    image: day25-vllm-gpt2:latest
+    runtime: nvidia
+    ports: ["8000:8000"]
+  api2:
+    image: day25-vllm-gpt2:latest
+    runtime: nvidia
+    ports: ["8001:8000"]
+  api3:
+    image: day25-vllm-gpt2:latest
+    runtime: nvidia
+    ports: ["8002:8000"]
+  api4:
+    image: day25-vllm-gpt2:latest
+    runtime: nvidia
+    ports: ["8003:8000"]
+  api5:
+    image: day25-vllm-gpt2:latest
+    runtime: nvidia
+    ports: ["8004:8000"]
