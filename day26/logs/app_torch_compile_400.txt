@@ -1,0 +1,5 @@
+(ai-env) felix@felix-5060ti:~/ai-1year/day26$ python app_torch_compile_400.py
+Before: 232.7MiB
+W0920 23:54:34.672000 1360145 torch/_inductor/utils.py:1953] [0/0] Not enough SMs to use max_autotune_gemm mode
+After 2x run: 233.4MiB / 실행 후
+Peak: 445.5MiB / 최대

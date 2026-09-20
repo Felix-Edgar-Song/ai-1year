@@ -1,0 +1,4 @@
+W0920 23:52:24.962000 1359064 torch/_inductor/utils.py:1953] [0/0] Not enough SMs to use max_autotune_gemm mode
+Compiled model - VRAM: 580.8MiB
+Output shape: torch.Size([1, 32, 50257]) / 출력 모양
+Peak VRAM: 844.3MiB / 최대 VRAM
