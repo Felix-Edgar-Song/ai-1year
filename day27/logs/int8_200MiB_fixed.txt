@@ -1,0 +1,32 @@
+W0921 22:46:19.166000 7879 torch/_inductor/utils.py:1953] [0/0] Not enough SMs to use max_autotune_gemm mode
+W0921 22:46:22.057000 7879 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+=== Day26 bf16 baseline 233MiB ===
+Before: 232.7MiB
+After 2x bf16: 233.4MiB
+Peak bf16: 445.5MiB
+
+=== Day27 int8 weight-only 200MiB challenge ===
+Traceback (most recent call last):
+  File "/home/felix/ai-1year/day27/app_int8_200MiB_fixed.py", line 37, in <module>
+    from torchao.quantization import quantize_, int8_weight_only
+ImportError: cannot import name 'int8_weight_only' from 'torchao.quantization' (/home/felix/ai-env/lib/python3.12/site-packages/torchao/quantization/__init__.py)
+Mon Sep 21 22:46:23 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   42C    P0             25W /  180W |      34MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+

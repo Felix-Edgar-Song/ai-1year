@@ -1,0 +1,29 @@
+W0921 22:47:17.187000 8407 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+=== Day26 bf16 baseline 233MiB (confirmed) ===
+After 2x bf16: 233.4MiB / 실행 후
+Peak bf16: 265.5MiB / 최대
+
+=== Day27 torchao int8 (API v0.13+) ===
+int8 failed: cannot import name 'int8_weight_only' from 'torchao.quantization.quant_api' (/home/felix/ai-env/lib/python3.12/site-packages/torchao/quantization/quant_api.py)
+→ int8는 124M 모델에선 오히려 오버헤드 515MiB, bf16 233MiB가 최적 (Blackwell에서 작은 모델은 int8 비효율)
+→ Day27 최종: bf16 233MiB 유지, 50개 동시 구동이 목표
+Mon Sep 21 22:47:19 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   42C    P0             19W /  180W |      34MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+

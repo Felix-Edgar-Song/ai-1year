@@ -1,0 +1,102 @@
+/home/felix/ai-1year/day27/app_int8_200MiB.py:27: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_int8 = quantize_dynamic(model, {nn.Linear}, dtype=torch.qint8)
+/home/felix/ai-env/lib/python3.12/site-packages/torch/ao/nn/quantized/modules/utils.py:72: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  qweight = torch.quantize_per_tensor(
+[bf16] Alloc: 232.7MiB
+[int8] Alloc: 515.7MiB
+Traceback (most recent call last):
+  File "/home/felix/ai-1year/day27/app_int8_200MiB.py", line 33, in <module>
+    out = model_int8(x)
+          ^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 511, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1166, in compile_wrapper
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-1year/day27/app_int8_200MiB.py", line 18, in forward
+    h = layer(h)
+        ^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/transformer.py", line 952, in forward
+    x = self.norm2(x + self._ff_block(x))
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/transformer.py", line 977, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+                                                  ^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/ao/nn/quantized/dynamic/modules/linear.py", line 58, in forward
+    Y = torch.ops.quantized.linear_dynamic(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felix/ai-env/lib/python3.12/site-packages/torch/_ops.py", line 1279, in __call__
+    return self._op(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: Could not run 'quantized::linear_dynamic' with arguments from the 'CUDA' backend. This could be because the operator doesn't exist for this backend, or was omitted during the selective/custom build process (if using custom build). If you are a Facebook employee using PyTorch on mobile, please visit https://fburl.com/ptmfixes for possible resolutions. 'quantized::linear_dynamic' is only available for these backends: [CPU, Meta, BackendSelect, Python, FuncTorchDynamicLayerBackMode, Functionalize, Conjugate, Negative, ZeroTensor, ADInplaceOrView, AutogradOther, AutogradCPU, AutogradCUDA, AutogradXLA, AutogradMPS, AutogradXPU, AutogradHPU, AutogradLazy, AutogradMTIA, AutogradMAIA, AutogradPrivateUse1, AutogradMeta, Tracer, AutocastCPU, AutocastMTIA, AutocastMAIA, AutocastXPU, AutocastMPS, AutocastCUDA, FuncTorchBatched, BatchedNestedTensor, FuncTorchVmapMode, Batched, VmapMode, FuncTorchGradWrapper, PythonTLSSnapshot, FuncTorchDynamicLayerFrontMode, PreDispatch, PythonDispatcher].
+
+CPU: registered at /__w/pytorch/pytorch/aten/src/ATen/native/quantized/cpu/qlinear_dynamic.cpp:1026 [kernel]
+Meta: registered at /__w/pytorch/pytorch/aten/src/ATen/core/MetaFallbackKernel.cpp:23 [backend fallback]
+BackendSelect: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/core/BackendSelectFallbackKernel.cpp:3 [backend fallback]
+Python: registered at /__w/pytorch/pytorch/aten/src/ATen/core/PythonFallbackKernel.cpp:192 [backend fallback]
+FuncTorchDynamicLayerBackMode: registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/DynamicLayer.cpp:479 [backend fallback]
+Functionalize: registered at /__w/pytorch/pytorch/aten/src/ATen/FunctionalizeFallbackKernel.cpp:411 [backend fallback]
+Conjugate: registered at /__w/pytorch/pytorch/aten/src/ATen/ConjugateFallback.cpp:17 [backend fallback]
+Negative: registered at /__w/pytorch/pytorch/aten/src/ATen/native/NegateFallback.cpp:18 [backend fallback]
+ZeroTensor: registered at /__w/pytorch/pytorch/aten/src/ATen/ZeroTensorFallback.cpp:115 [backend fallback]
+ADInplaceOrView: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:103 [backend fallback]
+AutogradOther: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:62 [backend fallback]
+AutogradCPU: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:66 [backend fallback]
+AutogradCUDA: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:74 [backend fallback]
+AutogradXLA: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:86 [backend fallback]
+AutogradMPS: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:94 [backend fallback]
+AutogradXPU: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:70 [backend fallback]
+AutogradHPU: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:107 [backend fallback]
+AutogradLazy: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:90 [backend fallback]
+AutogradMTIA: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:78 [backend fallback]
+AutogradMAIA: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:82 [backend fallback]
+AutogradPrivateUse1: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:111 [backend fallback]
+AutogradMeta: registered at /__w/pytorch/pytorch/aten/src/ATen/core/VariableFallbackKernel.cpp:98 [backend fallback]
+Tracer: registered at /__w/pytorch/pytorch/torch/csrc/autograd/TraceTypeManual.cpp:296 [backend fallback]
+AutocastCPU: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:330 [backend fallback]
+AutocastMTIA: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:472 [backend fallback]
+AutocastMAIA: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:510 [backend fallback]
+AutocastXPU: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:548 [backend fallback]
+AutocastMPS: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:221 [backend fallback]
+AutocastCUDA: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/autocast_mode.cpp:177 [backend fallback]
+FuncTorchBatched: registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/LegacyBatchingRegistrations.cpp:730 [backend fallback]
+BatchedNestedTensor: registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/LegacyBatchingRegistrations.cpp:757 [backend fallback]
+FuncTorchVmapMode: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/VmapModeRegistrations.cpp:22 [backend fallback]
+Batched: registered at /__w/pytorch/pytorch/aten/src/ATen/LegacyBatchingRegistrations.cpp:1072 [backend fallback]
+VmapMode: fallthrough registered at /__w/pytorch/pytorch/aten/src/ATen/VmapModeRegistrations.cpp:32 [backend fallback]
+FuncTorchGradWrapper: registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/TensorWrapper.cpp:210 [backend fallback]
+PythonTLSSnapshot: registered at /__w/pytorch/pytorch/aten/src/ATen/core/PythonFallbackKernel.cpp:200 [backend fallback]
+FuncTorchDynamicLayerFrontMode: registered at /__w/pytorch/pytorch/aten/src/ATen/functorch/DynamicLayer.cpp:475 [backend fallback]
+PreDispatch: registered at /__w/pytorch/pytorch/aten/src/ATen/core/PythonFallbackKernel.cpp:204 [backend fallback]
+PythonDispatcher: registered at /__w/pytorch/pytorch/aten/src/ATen/core/PythonFallbackKernel.cpp:196 [backend fallback]
+
