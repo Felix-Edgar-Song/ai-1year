@@ -1,0 +1,1 @@
+Ready: 233MiB x 50 = 11.6GiB < 16GiB - uvicorn app_fastapi_50:app --port 8000

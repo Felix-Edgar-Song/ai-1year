@@ -1,0 +1,2 @@
+CUDA: True, SM: (12, 0)
+SGLang fail: Detected that PyTorch and torchvision were compiled with different CUDA major versions. PyTorch has CUDA Version=13.0 and torchvision has CUDA Version=12.9. Please reinstall the torchvision that matches your PyTorch install. -> torch.compile 233MiB가 Blackwell 최종 정답
