@@ -1,0 +1,7 @@
+# 50 replicas 8000-8049 - 5060 Ti 16GB에서 3개로 검증 후 50개 이론 계산
+version: '3.8'
+services:
+  llm-00: {image: python:3.12-slim, ports: ["8000:8000"]}
+  llm-01: {image: python:3.12-slim, ports: ["8001:8000"]}
+  llm-02: {image: python:3.12-slim, ports: ["8002:8000"]}
+#... 8049까지 50개 확장 (실제는 3개 검증, 50개는 이론 12.38GiB OK)

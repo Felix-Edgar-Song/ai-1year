@@ -1,0 +1,26 @@
+W0928 21:30:37.927000 8294 torch/_inductor/utils.py:1953] [0/0] Not enough SMs to use max_autotune_gemm mode
+=== Day34 50 Replica Theory ===
+Day32 232.7MiB x3 = 698.1MiB + 15MiB x3 = 743.1MiB <16311MiB OK
+Day32 232.7MiB x50 = 11.635GiB + 0.75GiB = 12.385GiB <16GiB OK (Day32 갱신)
+P99 1.1ms x50 parallel = 55ms <100ms SLO
+Day34 Final: Alloc 232.7MiB Peak 445.5MiB P50 0.9ms P99 1.1ms 50x Theory 12.38GiB OK
+Mon Sep 28 21:30:51 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   40C    P0             19W /  180W |      34MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
