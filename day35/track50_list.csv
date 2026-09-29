@@ -1,0 +1,21 @@
+track,company,role,level,location,why_fit,apply_date,priority_keyword
+1,【entity-Meta¦canonical_name=Meta】 SG,ML Infra Engineer,E3/E4,Singapore,Blackwell sm_120 232.7MiB opt 74% cut niche,2026-12-01,232.7MiB P99 1.1ms
+1,Google SG,ML Platform,E3,Singapore,50 replicas LB 10yr web,2026-12-01,Least VRAM LB
+1,TikTok SG,ML Infra,E3/E4,Singapore,small GPU opt 74% cut 50x 12.38GiB,2026-12-01,sm_120
+1,【entity-AWS¦canonical_name=AWS】 SG,AI Infra,L4,Singapore,12.38GiB<16GiB prod 55ms<100ms SLO,2026-12-01,P99 1.1ms
+1,Grab,ML Engineer,3,Singapore,Least VRAM LB /vram health 10yr,2026-12-01,Nginx LB
+1,Sea Group,AI Infra,3,Singapore,5060 Ti optimization 232.7MiB,2026-12-01,Blackwell
+1,【entity-Shopee¦canonical_name=Shopee】,ML Infra,3,Singapore,P99 1.1ms 50 parallel 55ms,2026-12-01,latency
+1,ByteDance SG,Infra,3,Singapore,torch.compile final SGLang Fail proof,2026-12-01,torch.compile
+1,【entity-Apple¦canonical_name=Apple】 SG,ML Platform,3,Singapore,74% cut story 17->50 3x,2026-12-01,74% cut
+1,Microsoft SG,AI Infra,3,Singapore,Blackwell optimization 232.7MiB,2026-12-01,sm_120
+2,AI Singapore,AI Engineer,,Singapore,small GPU expert 16GB 50 replicas,2026-12-08,16GB 50
+2,Continuum SG,ML Infra,,Singapore,232.7MiB floor proof 265.5MiB Peak,2026-12-08,265.5MiB
+2,BasisAI,ML Engineer,,Singapore,Least VRAM LB /vram,2026-12-08,LB
+2,Traverse SG,AI Infra,,Singapore,P99 1.1ms service,2026-12-08,P99
+2,SG Startup H100 Limited,ML Infra,,Singapore,5060 Ti opt 12.38GiB,2026-12-08,5060 Ti
+3,Upstage,ML Infra,,Korea,50 replicas 12.38GiB<16GiB,2026-12-15,50 replicas
+3,Moreh,Infra,,Korea,Blackwell sm_120 36 SMs,2026-12-15,sm_120
+3,Rebellions,NPU Infra,,Korea,small GPU opt 232.7MiB,2026-12-15,NPU
+3,FuriosaAI,Compiler,,Korea,torch.compile reduce-overhead,2026-12-15,compile
+3,Twelve Labs,ML Infra,,Korea,P99 1.1ms service FastAPI,2026-12-15,FastAPI

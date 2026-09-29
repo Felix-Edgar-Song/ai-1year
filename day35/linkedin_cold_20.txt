@@ -1,0 +1,14 @@
+Template for SG 20 cold messages (5/day):
+
+Hi [Name], I'm Felix from Korea - 10yr web ops + 2-month AI Infra deep dive on RTX 5060 Ti 16GB sm_120 Blackwell (CUDA 13.2 Driver 595.91.07).
+
+I optimized LLM serving 74.2%: 902MiB 17 → 232.7MiB / 265.5MiB Peak (first 445.5MiB) P50 0.9ms P99 1.1ms 100 runs 50 replicas 12.385GiB<16GiB Least VRAM LB 8000-8049 /vram health /generate.
+
+Logs: Day24-34 https://github.com/felix/blackwell-llm-serving - 232.68MiB / 265.45MiB Peak repro 100% + P99 1.1ms + nginx least_conn config + 10yr LB.
+
+Targeting SG AI Infra (Meta SG E3/E4, BigTech SG, startups with limited H100) for Dec-Jan apply. Any advice for SG market for small-GPU optimization expert?
+
+Thanks!
+Felix
+
+List 20: Search LinkedIn "AI Engineer Singapore" "ML Infra Singapore" 20 people - send 5/day from tomorrow.

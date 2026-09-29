@@ -1,0 +1,11 @@
+=== Resume 1-line Final (Day32-34) ===
+RTX 5060 Ti 16GB sm_120 Blackwell 36 SMs | 232.7MiB / 265.5MiB Peak (445.5MiB first compile) P50 0.9ms P99 1.1ms 100 runs 50 replicas 12.385GiB<16GiB Least VRAM LB 8000-8049 /vram health /generate | 902MiB 17→232.7MiB 74.2% cut 3x 2-month | torch.compile final SGLang sm_120 Fail proof + int8 232→515MiB reverse proof + 10yr web LB
+
+=== Interview 4 Sentences Final (Day34) ===
+1. 50 replicas: 232.7MiB x50=11.635GiB+15MiB overhead=12.385GiB<16GiB OK Least VRAM LB 8000-8049 /vram health / proxy_pass + P99 1.1ms x50=55ms<100ms SLO - Day33-34 log proof 10yr web LB
+2. int8: 124M vocab 50257 scale table 232→515MiB increase 7B+ only effective - Day27 log proof
+3. torch.compile: SGLang flashinfer sm_120 not supported CUDA 13.0 vs 12.9 mismatch + vLLM EngineCore 360MiB fixed overhead 10 only vs 232.7MiB Peak 265.5MiB only <400MiB+50 - Day28 log proof
+4. P99: P50 0.9ms P99 1.1ms Mean 0.9ms 100 runs len8 124M bf16 5060 Ti sm_120 36 SMs 1ms 50 parallel 55ms 100ms SLO - Day32 log proof
+
+=== GitHub README Top 1 Line ===
+## 232.7MiB / 265.5MiB Peak P50 0.9ms P99 1.1ms 50x 12.38GiB<16GiB Least VRAM LB 5060 Ti sm_120 Blackwell 74.2% cut 17→50 3x 2-month
