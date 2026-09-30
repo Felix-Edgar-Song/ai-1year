@@ -1,0 +1,5 @@
+Hi [Name], Felix from Korea - 10yr web ops + 2-month AI Infra on RTX 5060 Ti sm_120 Blackwell CUDA 13.2 Driver 595.91.07.
+Optimized 74.2%: 902MiB 17 → 232.7MiB / 265.5MiB Peak P50 0.9ms P99 1.1ms 100 runs 50 replicas 12.385GiB<16GiB Least VRAM LB 8000-8049 /vram health /generate.
+Logs: github.com/felix/blackwell-llm-serving Day32 232.7MiB P99 1.1ms Day33 232.68/265.45 FastAPI Day34 12.38GiB OK 55ms SLO nginx LB + 10yr LB.
+Targeting SG AI Infra E3/E4 Dec-Jan, any advice for small-GPU optimization market?
+Thanks! Felix
