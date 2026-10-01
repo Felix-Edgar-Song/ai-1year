@@ -1,0 +1,25 @@
+Day37 - No GPU run - Portfolio maintenance day
+12MiB / 16311MiB P8 4W 33C No running processes - 2-month cleanest maintained
+Yesterday Day36: README_top_final 616B + 3 resume + linkedin 525B + git push done
+Today: Rest + 10-11월 준비 90% 유지, 12-1월 지원 준비
+nvidia-smi: 12MiB P8 4W No running - base 22MiB reduced dual->single monitor
+Thu Oct  1 20:10:41 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   32C    P8              4W /  180W |      12MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
