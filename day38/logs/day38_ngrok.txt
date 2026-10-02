@@ -1,0 +1,4 @@
+LIVE DEMO URL: NgrokTunnel: "https://vagrantly-creatable-stem.ngrok-free.dev" -> "http://localhost:8000"/vram
+LIVE DEMO URL: NgrokTunnel: "https://vagrantly-creatable-stem.ngrok-free.dev" -> "http://localhost:8000"/health
+LIVE DEMO URL: NgrokTunnel: "https://vagrantly-creatable-stem.ngrok-free.dev" -> "http://localhost:8000"/generate?prompt=Hello%20Meta%20SG
+Enter 눌러서 종료 - 이 URL을 README에 넣기!

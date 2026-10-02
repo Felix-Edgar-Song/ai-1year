@@ -1,0 +1,5 @@
+Day38 SUCCESS - Live Demo ngrok 24h
+URL: https://vagrantly-creatable-stem.ngrok-free.dev/vram
+URL: https://vagrantly-creatable-stem.ngrok-free.dev/health
+URL: https://vagrantly-creatable-stem.ngrok-free.dev/generate?prompt=Hello%20Meta%20SG
+vram_mib:12.0 peak:265.5 P99:1.1ms 50x:12.385GiB OK 12MiB P8 4W maintained
