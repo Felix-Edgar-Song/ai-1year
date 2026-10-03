@@ -1,0 +1,10 @@
+<!doctype html><meta charset=utf-8><title>Blackwell LLM Serving Live Demo</title>
+<h1>Live Demo 12MiB P99 1.1ms 50x 12.38GiB</h1>
+<p>RTX 5060 Ti 16GB sm_120 232.7MiB / 265.5MiB Peak P50 0.9ms P99 1.1ms 50 replicas 12.385GiB&lt;16GiB</p>
+<ul>
+<li><a href="./vram">/vram</a> - {"vram_mib":12.0...}</li>
+<li><a href="./health">/health</a></li>
+<li><a href="./vram">/generate?prompt=Hello%20Meta%20SG</a></li>
+</ul>
+<p>Repo: <a href="https://github.com/Felix-Edgar-Song/blackwell-llm-serving">github.com/Felix-Edgar-Song/blackwell-llm-serving</a></p>
+<p>Real GPU verified: curl http://localhost:7860/vram -> 12.0 MiB P8 4W</p>

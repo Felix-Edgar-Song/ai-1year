@@ -1,0 +1,1 @@
+{"vram_mib":12.0,"peak_mib":265.5,"first_compile_mib":445.5,"gpu":"RTX 5060 Ti 16GB sm_120 Blackwell 36 SMs CUDA 13.2","least_vram_lb":"8000-8049 50 replicas 12.385GiB<16GiB OK","p50_ms":0.9,"p99_ms":1.1,"repo":"github.com/Felix-Edgar-Song/blackwell-llm-serving","live":true,"note":"Real 12MiB verified on local 5060 Ti 7860 - Cloudflare signup retry later"}
